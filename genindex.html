@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; SDGym 0.1.1-dev documentation</title>
+  <title>Index &mdash; SDGym 0.2.2.dev0 documentation</title>
   
 
   
@@ -51,12 +51,12 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> SDGym
+            <a href="index.html">
           
 
           
             
-            <img src="_static/dai-logo-white-200.png" class="logo" alt="Logo"/>
+            <img src="_static/header_light.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -83,36 +83,34 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="readme.html">SDGym - Synthetic Data Gym</a></li>
-<li class="toctree-l1"><a class="reference internal" href="readme.html#overview">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#what-is-a-synthesizer-function">What is a synthesizer function?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#what-data-should-your-synthesizer-work-with">What data should your synthesizer work with?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#what-is-a-synthetic-data-generator">What is a Synthetic Data Generator?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#benchmark-datasets">Benchmark datasets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#demo-synthesizers">Demo Synthesizers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#current-leaderboard">Current Leaderboard</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="readme.html#gaussian-mixture-simulated-data">Gaussian Mixture Simulated Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="readme.html#bayesian-networks-simulated-data">Bayesian Networks Simulated Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="readme.html#real-world-datasets">Real World Datasets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="readme.html#install">Install</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#requirements">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#install-with-pip">Install with pip</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#install-from-source">Install from source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#install-for-development">Install for Development</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#compile-c-dependencies">Compile C++ dependencies</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="readme.html#id1">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#benchmark">Benchmark</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#using-the-demo-synthesizers">Using the Demo Synthesizers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#benchmarking-the-demo-synthesizers">Benchmarking the Demo Synthesizers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="readme.html#list-of-demo-synthesizers">List of Demo Synthesizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#usage">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#benchmarking-your-own-synthesizer">Benchmarking your own synthesizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#benchmarking-the-sdgym-synthesizers">Benchmarking the SDGym Synthesizers</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="readme.html#what-s-next">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#additional-references">Additional References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="readme.html#related-projects">Related Projects</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#sdv">SDV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#ctgan">CTGAN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="readme.html#tgan">TGAN</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="readme.html#references">References</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Resources</span></p>
 <ul>
@@ -125,6 +123,7 @@
 <li class="toctree-l3"><a class="reference internal" href="api/sdgym.constants.html">sdgym.constants module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api/sdgym.data.html">sdgym.data module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api/sdgym.evaluate.html">sdgym.evaluate module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api/sdgym.results.html">sdgym.results module</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="api/sdgym.html#module-sdgym">Module contents</a></li>
@@ -147,6 +146,15 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="history.html">History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="history.html#v0-2-1-2020-05-12">v0.2.1 - 2020-05-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="history.html#new-features">New Features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="history.html#v0-2-0-2020-04-10">v0.2.0 - 2020-04-10</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="history.html#id1">New Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="history.html#bug-fixes">Bug Fixes</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="history.html#v0-1-0-2019-08-07">v0.1.0 - 2019-08-07</a></li>
 </ul>
 </li>
@@ -220,14 +228,25 @@
 <h1 id="index">Index</h1>
 
 <div class="genindex-jumpbox">
- <a href="#B"><strong>B</strong></a>
- | <a href="#E"><strong>E</strong></a>
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
  | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
  | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
  | <a href="#S"><strong>S</strong></a>
+ | <a href="#W"><strong>W</strong></a>
  
 </div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/sdgym.results.html#sdgym.results.add_sheet">add_sheet() (in module sdgym.results)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -240,10 +259,14 @@
   </ul></td>
 </tr></table>
 
-<h2 id="E">E</h2>
+<h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/sdgym.evaluate.html#sdgym.evaluate.evaluate">evaluate() (in module sdgym.evaluate)</a>
+      <li><a href="api/sdgym.benchmark.html#sdgym.benchmark.compute_benchmark">compute_benchmark() (in module sdgym.benchmark)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/sdgym.evaluate.html#sdgym.evaluate.compute_scores">compute_scores() (in module sdgym.evaluate)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -252,6 +275,18 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/sdgym.evaluate.html#sdgym.evaluate.FeatureMaker">FeatureMaker (class in sdgym.evaluate)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/sdgym.results.html#sdgym.results.get_summary">get_summary() (in module sdgym.results)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/sdgym.results.html#sdgym.results.get_wins">get_wins() (in module sdgym.results)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -265,6 +300,10 @@
         <li><a href="api/sdgym.data.html#sdgym.data.load_dataset">(in module sdgym.data)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/sdgym.results.html#sdgym.results.load_results">load_results() (in module sdgym.results)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -283,13 +322,25 @@
 </li>
       <li><a href="api/sdgym.benchmark.html#module-sdgym.benchmark">sdgym.benchmark (module)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/sdgym.constants.html#module-sdgym.constants">sdgym.constants (module)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/sdgym.data.html#module-sdgym.data">sdgym.data (module)</a>
 </li>
       <li><a href="api/sdgym.evaluate.html#module-sdgym.evaluate">sdgym.evaluate (module)</a>
+</li>
+      <li><a href="api/sdgym.results.html#module-sdgym.results">sdgym.results (module)</a>
+</li>
+      <li><a href="api/sdgym.results.html#sdgym.results.summarize_results">summarize_results() (in module sdgym.results)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/sdgym.results.html#sdgym.results.write_results">write_results() (in module sdgym.results)</a>
 </li>
   </ul></td>
 </tr></table>
